@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- favicon -->
     <link rel="icon" href="">
     <!-- css -->
-    <link rel="Stylesheet" href="/styles/styles.css">
+    <link rel="Stylesheet" href="/public/styles/styles.css">
     <!-- js -->
     <script src="" defer></script>
 
     <title>Vacation</title>
 </head>
 <body>
+    <div id="pagebox">
+        <div id="image">
+            <img src="/public/images/back.png" alt="sunset">
+            <div id="img-center">Book Your Dream Vacation</div>
+        </div>
+        <h1>test</h1>
+        <form id="form" action="#" method="get">
+            <div class="form-group">
+                <fieldset>
+                    <label for="destination">Destination</label>
+                        <span class="err" id="err-destination">please choose a destination</span>
+                            <select id="destination" name="destination">
+                                <option value="none">  Choose a Destination</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="tokyo">Tokyo, Japan</option>
+                                <option value="oslo">Oslo, Norway</option>
+                                <option value="newyork">New York City, USA</option>
+                            </select>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <label for="date">Departure Date</label>
+                        <span class="err" id="err-date">please choose a departure date</span>
+                            <input type="date" id="date" name="date">
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <label for="number">Number of Travelers</label>
+                        <span class="err" id="err-number">please input a number greater than 0</span>
+                            <input type="number" id="number" name="number">
+                </fieldset>
+            </div>
+
+            <button type="submit" id="submit-button">Find My Vacation</button>
+        </form>
+    </div>
     
 </body>
 </html>
