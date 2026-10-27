@@ -60,5 +60,6 @@ button {
 
 .err {
     display: none;
+    color: red;
 }
 

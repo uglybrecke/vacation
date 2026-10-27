@@ -19,3 +19,9 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http:localhost:${PORT}`);
 });
+
+//add a route to displays a thanks page
+app.get('/thanks', (req, res) => {
+    //send this file
+    res.sendFile(`${import.meta.dirname}/views/thanks.html`);
+})
