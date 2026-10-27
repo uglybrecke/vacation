@@ -14,14 +14,13 @@
     <title>Vacation</title>
 </head>
 <body>
-    <div id="pagebox">
-        <div id="image">
-            <img src="/public/images/back.png" alt="sunset">
-            <div id="img-center">Book Your Dream Vacation</div>
-        </div>
-        <h1>test</h1>
+    <div id="formdiv" class="form-group">
         <form id="form" action="#" method="get">
-            <div class="form-group">
+                <div id="image" class="form-group">
+                    <img src="/public/images/back.png" alt="sunset">
+                        <div id="img-center">Book Your Dream Vacation</div>
+                </div>
+            <div class="form-group" id="dest">
                 <fieldset>
                     <label for="destination">Destination</label>
                         <span class="err" id="err-destination">please choose a destination</span>
@@ -36,7 +35,7 @@
                 </fieldset>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" id="depart">
                 <fieldset>
                     <label for="date">Departure Date</label>
                         <span class="err" id="err-date">please choose a departure date</span>
@@ -44,7 +43,7 @@
                 </fieldset>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" id="trav">
                 <fieldset>
                     <label for="number">Number of Travelers</label>
                         <span class="err" id="err-number">please input a number greater than 0</span>
